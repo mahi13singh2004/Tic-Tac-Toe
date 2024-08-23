@@ -17,7 +17,6 @@ const Board = () => {
       [2, 4, 6],
     ];
 
-    // Check for winner
     for (let pattern of winnerPatterns) {
       const [a, b, c] = pattern;
       if (state[a] && state[a] === state[b] && state[a] === state[c]) {
@@ -25,7 +24,6 @@ const Board = () => {
       }
     }
 
-    // Check for draw
     if (!state.includes(null)) {
       return 'Game Draw';
     }
@@ -36,7 +34,7 @@ const Board = () => {
   const winner = checkWinner();
 
   const handleClick = (index) => {
-    if (state[index] || winner) return; // Prevent changes if already occupied or game over
+    if (state[index] || winner) return; 
 
     const copy = [...state];
     copy[index] = xturn ? 'X' : 'O';
