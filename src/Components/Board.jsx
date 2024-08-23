@@ -25,7 +25,7 @@ const Board = () => {
     }
 
     if (!state.includes(null)) {
-      return 'Game Draw';
+      return 'No-One';
     }
 
     return null; // No winner
