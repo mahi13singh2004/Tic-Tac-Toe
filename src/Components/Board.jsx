@@ -17,26 +17,24 @@ const Board = () => {
       [2, 4, 6],
     ];
 
-    // Check for winner
     for (let pattern of winnerPatterns) {
       const [a, b, c] = pattern;
       if (state[a] && state[a] === state[b] && state[a] === state[c]) {
-        return state[a]; // Return the winner ('X' or 'O')
+        return state[a]; 
       }
     }
 
-    // Check for draw
     if (!state.includes(null)) {
       return 'Game Draw';
     }
 
-    return null; // No winner
+    return null; 
   };
 
   const winner = checkWinner();
 
   const handleClick = (index) => {
-    if (state[index] || winner) return; // Prevent changes if already occupied or game over
+    if (state[index] || winner) return; 
 
     const copy = [...state];
     copy[index] = xturn ? 'X' : 'O';
@@ -46,7 +44,7 @@ const Board = () => {
 
   const reset = () => {
     setState(Array(9).fill(null));
-    setXturn(true); // Optionally reset the turn to X
+    setXturn(true);
   };
 
   return (
