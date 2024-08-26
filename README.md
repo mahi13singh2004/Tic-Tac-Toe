@@ -6,4 +6,4 @@ Two Players: One takes 'X', the other takes 'O'. You know, classic stuff.<br>
 Three in a Row: The first player to get three of their marks in a horizontal, vertical, or diagonal row wins. Simple, right?<br>
 Draw: If all spaces are filled and no one has three in a row, it’s a draw. Cue dramatic music.<br>
 
-CLick to visit: tic-tac-toe-smoky-delta-56.vercel.app
+CLick to visit: [tic-tac-toe-smoky-delta-56.vercel.app](https://tic-tac-toe-smoky-delta-56.vercel.app/)
